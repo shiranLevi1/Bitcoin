@@ -360,10 +360,10 @@ $("#aboutPage").click(() => {
 // can not provide anything but A-Z letters
 
 $("#coinSearch").on("keypress", (e) => {
-    let key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
-    if (!/^[0-9]+$/i.test(key)) {
-        e.preventDefault();
-    }
+     var key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
+      if (!/^[A-Z0-9]+$/i.test(key)) {
+          e.preventDefault();
+   }
 });
 
 // on Search click
