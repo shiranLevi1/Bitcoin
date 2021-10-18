@@ -361,7 +361,7 @@ $("#aboutPage").click(() => {
 
 $("#coinSearch").on("keypress", (e) => {
      var key = String.fromCharCode(!e.charCode ? e.which : e.charCode);
-      if (!/^[A-Z0-9]+$/i.test(key)) {
+      if (!/^[A-Z]+$/i.test(key)) {
           e.preventDefault();
    }
 });
